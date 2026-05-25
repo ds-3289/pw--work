@@ -22,6 +22,13 @@ import RoleManagement from './pages/users/RoleManagement';
 import PermissionMatrix from './pages/users/PermissionMatrix';
 import SessionManagement from './pages/users/SessionManagement';
 
+// Loan Management — Screens 33–37
+import LoanApplicationMonitor from './pages/loans/LoanApplicationMonitor';
+import LoanDetailTimeline from './pages/loans/LoanDetailTimeline';
+import ManualOverrideConsole from './pages/loans/ManualOverrideConsole';
+import DisbursalSettlementQueue from './pages/loans/DisbursalSettlementQueue';
+import CollectionsBounceManagement from './pages/loans/CollectionsBounceManagement';
+
 // ─── Auth helpers ───────────────────────────────────────────
 function isAuthenticated() {
   return localStorage.getItem('finz_authenticated') === 'true';
@@ -149,6 +156,13 @@ export default function App() {
               />
             }
           />
+
+          {/* Phase 8 — Loan & Disbursal Management — Screens 33–37 */}
+          <Route path="/loan-application-monitor" element={<LoanApplicationMonitor />} />
+          <Route path="/loan-detail-timeline" element={<LoanDetailTimeline />} />
+          <Route path="/manual-override-console" element={<ManualOverrideConsole />} />
+          <Route path="/disbursal-settlement-queue" element={<DisbursalSettlementQueue />} />
+          <Route path="/collections-bounce-management" element={<CollectionsBounceManagement />} />
 
           {/* Profile — Screens 04–05 */}
           <Route path="/profile" element={<ProfileSettings />} />

@@ -13,11 +13,21 @@ const navGroups = [
   {
     label: 'Users & Access',
     items: [
-      { to: '/users', label: 'User Directory', icon: '', end: true }, // ← exact match only
+      { to: '/users', label: 'User Directory', icon: '', end: true },
       { to: '/users/create', label: 'Create User', icon: '' },
       { to: '/users/roles', label: 'Role Management', icon: '' },
       { to: '/users/permissions', label: 'Permission Matrix', icon: '' },
       { to: '/users/sessions', label: 'Sessions', icon: '' },
+    ],
+  },
+  {
+    label: 'Loan & Disbursal Management',
+    items: [
+      { to: '/loan-application-monitor', label: 'Loan Application Monitor', icon: '', end: true },
+      { to: '/loan-detail-timeline', label: 'Loan Detail & Timeline', icon: '' },
+      { to: '/manual-override-console', label: 'Manual Override Console', icon: '' },
+      { to: '/disbursal-settlement-queue', label: 'Disbursal & Settlement Queue', icon: '' },
+      { to: '/collections-bounce-management', label: 'Collections & Bounce Management', icon: '' },
     ],
   },
   {
@@ -39,7 +49,7 @@ export default function Sidebar({ collapsed, onToggle }) {
         {navGroups.map((group) => (
           <div key={group.label} className="sidebar__group">
             {!collapsed && <span className="sidebar__group-label">{group.label}</span>}
-            <ul>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
               {group.items.map((item) => (
                 <li key={item.to}>
                   <NavLink
