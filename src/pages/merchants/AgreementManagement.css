@@ -1,0 +1,12 @@
+.agr-actions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.agr-preview {
+  height: 320px;
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-hover);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+}
+.agr-hint { margin: 0 0 0.75rem 0; color: var(--color-text-muted); }
