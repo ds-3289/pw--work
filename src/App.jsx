@@ -29,6 +29,38 @@ import ManualOverrideConsole from './pages/loans/ManualOverrideConsole';
 import DisbursalSettlementQueue from './pages/loans/DisbursalSettlementQueue';
 import CollectionsBounceManagement from './pages/loans/CollectionsBounceManagement';
 
+// Phase 9 — Risk & Fraud — Screens 38–41
+import FraudAlertFeed from './pages/risk/FraudAlertFeed';
+import BlacklistManager from './pages/risk/BlacklistManager';
+import VelocityRiskRules from './pages/risk/VelocityRiskRules';
+import ManualReviewQueue from './pages/risk/ManualReviewQueue';
+
+// Phase 10 — Compliance & Audit — Screens 42–44
+import AuditTrailExplorer from './pages/compliance/AuditTrailExplorer';
+import ConsentLogViewer from './pages/compliance/ConsentLogViewer';
+import ComplianceReportsExports from './pages/compliance/ComplianceReportsExports';
+
+// Phase 11 — Analytics & Business Intelligence — Screens 45–48
+import BusinessAnalyticsDashboard from './pages/analytics/BusinessAnalyticsDashboard';
+import LenderLoanAnalytics from './pages/analytics/LenderLoanAnalytics';
+import SalesRegionAnalytics from './pages/analytics/SalesRegionAnalytics';
+import CustomReportBuilder from './pages/analytics/CustomReportBuilder';
+
+// Phase 12 — Notifications & Document Management — Screens 49–51
+import NotificationTemplateManager from './pages/notifications/NotificationTemplateManager';
+import CommunicationLogs from './pages/notifications/CommunicationLogs';
+import DocumentRepository from './pages/notifications/DocumentRepository';
+
+// Phase 13 — System & Integrations — Screens 52–55
+import WorkflowBuilder from './pages/system/WorkflowBuilder';
+import ThirdPartyIntegrations from './pages/system/ThirdPartyIntegrations';
+import FeatureFlagsABTests from './pages/system/FeatureFlagsABTests';
+import SystemParametersSettings from './pages/system/SystemParametersSettings';
+
+// Phase 14 — Support & Helpdesk — Screens 56–57
+import MasterTicketQueue from './pages/support/MasterTicketQueue';
+import TicketDetailSLATracking from './pages/support/TicketDetailSLATracking';
+
 // ─── Auth helpers ───────────────────────────────────────────
 function isAuthenticated() {
   return localStorage.getItem('finz_authenticated') === 'true';
@@ -163,6 +195,38 @@ export default function App() {
           <Route path="/manual-override-console" element={<ManualOverrideConsole />} />
           <Route path="/disbursal-settlement-queue" element={<DisbursalSettlementQueue />} />
           <Route path="/collections-bounce-management" element={<CollectionsBounceManagement />} />
+
+          {/* Phase 9 — Risk & Fraud — Screens 38–41 */}
+          <Route path="/fraud-alert-feed" element={<FraudAlertFeed />} />
+          <Route path="/blacklist-manager" element={<BlacklistManager />} />
+          <Route path="/velocity-risk-rules" element={<VelocityRiskRules />} />
+          <Route path="/manual-review-queue" element={<ManualReviewQueue />} />
+
+          {/* Phase 10 — Compliance & Audit — Screens 42–44 */}
+          <Route path="/audit-trail-explorer" element={<AuditTrailExplorer />} />
+          <Route path="/consent-log-viewer" element={<ConsentLogViewer />} />
+          <Route path="/compliance-reports-exports" element={<ComplianceReportsExports />} />
+
+          {/* Phase 11 — Analytics & Business Intelligence — Screens 45–48 */}
+          <Route path="/business-analytics-dashboard" element={<BusinessAnalyticsDashboard />} />
+          <Route path="/lender-loan-analytics" element={<LenderLoanAnalytics />} />
+          <Route path="/sales-region-analytics" element={<SalesRegionAnalytics />} />
+          <Route path="/custom-report-builder" element={<CustomReportBuilder />} />
+
+          {/* Phase 12 — Notifications & Document Management — Screens 49–51 */}
+          <Route path="/notification-template-manager" element={<NotificationTemplateManager />} />
+          <Route path="/communication-logs" element={<CommunicationLogs />} />
+          <Route path="/document-repository" element={<DocumentRepository />} />
+
+          {/* Phase 13 — System & Integrations — Screens 52–55 */}
+          <Route path="/workflow-builder" element={<WorkflowBuilder />} />
+          <Route path="/third-party-integrations" element={<ThirdPartyIntegrations />} />
+          <Route path="/feature-flags-ab-tests" element={<FeatureFlagsABTests />} />
+          <Route path="/system-parameters-settings" element={<SystemParametersSettings />} />
+
+          {/* Phase 14 — Support & Helpdesk — Screens 56–57 */}
+          <Route path="/master-ticket-queue" element={<MasterTicketQueue />} />
+          <Route path="/ticket-detail-sla-tracking" element={<TicketDetailSLATracking />} />
 
           {/* Profile — Screens 04–05 */}
           <Route path="/profile" element={<ProfileSettings />} />

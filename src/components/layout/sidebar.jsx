@@ -31,6 +31,56 @@ const navGroups = [
     ],
   },
   {
+    label: 'Risk & Fraud',
+    items: [
+      { to: '/fraud-alert-feed', label: 'Fraud Alert Feed', icon: '', end: true },
+      { to: '/blacklist-manager', label: 'Blacklist Manager', icon: '' },
+      { to: '/velocity-risk-rules', label: 'Velocity & Risk Rules', icon: '' },
+      { to: '/manual-review-queue', label: 'Manual Review Queue', icon: '' },
+    ],
+  },
+  {
+    label: 'Compliance & Audit',
+    items: [
+      { to: '/audit-trail-explorer', label: 'Audit Trail Explorer', icon: '', end: true },
+      { to: '/consent-log-viewer', label: 'Consent Log Viewer', icon: '' },
+      { to: '/compliance-reports-exports', label: 'Compliance Reports & Exports', icon: '' },
+    ],
+  },
+  {
+    label: 'Analytics & Business Intelligence',
+    items: [
+      { to: '/business-analytics-dashboard', label: 'Business Analytics Dashboard', icon: '', end: true },
+      { to: '/lender-loan-analytics', label: 'Lender & Loan Analytics', icon: '' },
+      { to: '/sales-region-analytics', label: 'Sales & Region Analytics', icon: '' },
+      { to: '/custom-report-builder', label: 'Custom Report Builder', icon: '' },
+    ],
+  },
+  {
+    label: 'Notifications & Document Management',
+    items: [
+      { to: '/notification-template-manager', label: 'Notification Template Manager', icon: '', end: true },
+      { to: '/communication-logs', label: 'Communication Logs', icon: '' },
+      { to: '/document-repository', label: 'Document Repository', icon: '' },
+    ],
+  },
+  {
+    label: 'System & Integrations',
+    items: [
+      { to: '/workflow-builder', label: 'Workflow Builder', icon: '', end: true },
+      { to: '/third-party-integrations', label: 'Third-Party Integration Switchboard', icon: '' },
+      { to: '/feature-flags-ab-tests', label: 'Feature Flags & A/B Tests', icon: '' },
+      { to: '/system-parameters-settings', label: 'System Parameters & Settings', icon: '' },
+    ],
+  },
+  {
+    label: 'Support & Helpdesk',
+    items: [
+      { to: '/master-ticket-queue', label: 'Master Ticket Queue', icon: '', end: true },
+      { to: '/ticket-detail-sla-tracking', label: 'Ticket Detail & SLA Tracking', icon: '' },
+    ],
+  },
+  {
     label: 'Account',
     items: [
       { to: '/profile', label: 'Profile Settings', icon: '' },
